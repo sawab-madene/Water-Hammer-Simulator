@@ -3167,29 +3167,6 @@ def about_us():
     top.title("À propos")
     w, h = top.winfo_screenwidth(),top.winfo_screenheight()
 ##canvas
-    canvas= tk.Canvas(top,width=w, height=h,bg='white')  
-##images
-    enp_im=Image.open(r'photos\enp.PNG')
-    enp_im=tk.PhotoImage(file=r'photos\enp.PNG',master=canvas)
-    canvas.create_image(100,100, image=enp_im)
-    canvas.image1 = enp_im
-    
-    labo_im=Image.open(r'photos\labo.png')
-    labo_im=tk.PhotoImage(file=r'photos\labo.png',master=canvas)
-    canvas.create_image(1290,100, image=labo_im)
-    canvas.image2 = labo_im
-##text
-    canvas.create_text(730,100, text="Ecole Nationale Polytechnique",fill='black',font=('Arial',30,'bold'))
-    canvas.create_text(730,180, text="Département Hydraulique",fill='#F5AC00',font=('Arial',25))
-    canvas.create_text(730,230, text="Laboratoire Matérieaux de Génie Civil et Environnement",fill='#F5AC00',font=('Arial',25))
-    canvas.create_text(730,300, text="Water Hammer Simulator",fill='#20A9CE',font=('Arial',40,'bold'))
-    canvas.create_text(1040,340, text="V.2020",fill='#20A9CE',font=('Arial',12,'bold'))
-    canvas.create_text(400,400, text="Dirigé par:",fill='black',font=('Arial',12,'bold')) 
-    canvas.create_text(520,420, text="M.A. BOUKHEMACHA",fill='black',font=('Arial',12,'bold'))                      
-    canvas.create_text(410,470, text="Réaliser par:",fill='black',font=('Arial',12,'bold'))                  
-    canvas.create_text(560,500, text="S.MADENE, S.ARAB version 2020",fill='black',font=('Arial',12,'bold'))   
-    canvas.create_text(610,530, text="Y.BENAKCHA, Y.BENMANSOUR version 2019",fill='black',font=('Arial',12,'bold'))   
-    canvas.create_text(575,560, text="M.ISSAD, D.E.MAZOUNI version 2018",fill='black',font=('Arial',12,'bold')) 
-    canvas.create_text(730,680, text="ENP 2020",fill='black',font=('Arial',12))                      
+    canvas= tk.Canvas(top,width=w, height=h,bg='white')                      
     """ activate widgets"""    
     canvas.place(x=-1.5,y=-1.5) 
